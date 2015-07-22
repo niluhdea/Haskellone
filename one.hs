@@ -107,6 +107,9 @@ fst' (a,b) = a
 
 snd' (a,b) = b
 
+and' [] = True
+and' [True, True] = True
+
 and' [True] = True
 and' [False] = False
 and' [True, True] = True
@@ -120,6 +123,9 @@ or' [False] = False
 zip' [] b = []
 zip' [a] [b] = [(a,b)]
 zip' [a,b] [c,d] = [(a,c), (b,d)]
+
+or
+
 
 
 
